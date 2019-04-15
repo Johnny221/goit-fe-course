@@ -1,0 +1,102 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0 auto;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+.menu {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 0px;
+  list-style: none;
+  text-align: center;
+}
+.menu li {
+  display: inline-block;
+  margin-right: 124px;
+}
+.menu li:last-child {
+  margin-right: 0px;
+}
+.menu a {
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 77px;
+  color: rgb(98, 98, 98);
+  font-size: 14px;
+  display: block;
+}
+.menu a:hover,
+.menu a:focus {
+  color: rgb(66, 180, 233);
+}
+/* LIFESTYLE SECTION */
+.lifestyle {
+  margin-bottom: 92px;
+}
+.lifestyle-list {
+  display: inline-block;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  width: 420px;
+  margin-right: 25px;
+}
+.lifestyle-list-image {
+  margin-bottom: 20px;
+}
+.lifestyle-list-item {
+  display: inline-block;
+  width: 420px;
+}
+.lifestyle-list-name {
+  margin: 0 auto;
+  font-size: 14px;
+  font-family: "Ubuntu";
+  color: rgb(180, 173, 158);
+  line-height: 31px;
+  margin-bottom: 15px;
+}
+.lifestyle-list-occupation {
+  margin: 0 auto;
+  font-size: 30px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  line-height: 30px;
+  margin-bottom: 65px;
+}
+.lifestyle-list-about {
+  margin: 0 auto;
+  font-size: 17px;
+  color: rgb(98, 98, 98);
+  margin-bottom: 102px;
+}
+.load-more-button {
+  display: inline-block;
+  border: 1px solid rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+  width: 164px;
+  height: 60px;
+  font-family: "Playfair Display";
+  font-size: 14px;
+  color: rgb(98, 98, 98);
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  text-align: center;
+}
+.button {
+  text-align: center;
+}
