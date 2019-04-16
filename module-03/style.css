@@ -45,6 +45,7 @@ body {
 /* LIFESTYLE SECTION */
 .lifestyle {
   margin-bottom: 92px;
+  font-size: 0;
 }
 .lifestyle-list {
   display: inline-block;
@@ -52,7 +53,11 @@ body {
   margin: 0px;
   padding: 0px;
   width: 420px;
-  margin-right: 25px;
+  margin-right: 60px;
+  margin-bottom: 60px;
+}
+.lifestyle-list:nth-child(2n){
+  margin-right: 0px;
 }
 .lifestyle-list-image {
   margin-bottom: 20px;
@@ -81,7 +86,7 @@ body {
   margin: 0 auto;
   font-size: 17px;
   color: rgb(98, 98, 98);
-  margin-bottom: 102px;
+  margin-bottom: 0px;
 }
 .load-more-button {
   display: inline-block;
@@ -97,6 +102,7 @@ body {
   cursor: pointer;
   text-align: center;
 }
+
 .button {
   text-align: center;
 }
