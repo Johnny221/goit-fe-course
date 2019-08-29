@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.page-nav {
+  display: flex;
+  min-height: 50px;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 130px;
+}
+.site-logo {
+  text-decoration: none;
+  color: #95e1d3;
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: bold;
+}
+.site-navigation {
+  width: 490px;
+  justify-content: space-between;
+  list-style: none;
+  display: flex;
+}
+
+.site-navigation a {
+  text-transform: uppercase;
+  color: #95e1d3;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 14px;
+  transition: color 200ms;
+  position: relative;
+}
+.site-navigation a:hover,
+.site-navigation a:focus {
+  cursor: pointer;
+  color: #f38181;
+}
+.site-navigation a::after {
+  background-color: #f38181;
+  display: block;
+  content: "";
+  height: 3px;
+  width: 0%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 200ms;
+}
+.site-navigation a:hover::after,
+.site-navigation a:focus::after {
+  width: 100%;
+}
+/* SECTION SERVICE */
+.title-service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title-work {
+  font-size: 24px;
+  font-family: "Kaushan Script";
+  margin-bottom: 22px;
+  text-align: center;
+}
+.title-main {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  margin-bottom: 43px;
+}
+.title-service::after {
+  content: "";
+  border-bottom: #f38181;
+  border-bottom-style: solid;
+  width: 60px;
+  height: 3px;
+  text-align: center;
+  margin-bottom: 111px;
+}
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.service-list-item {
+  position: relative;
+  text-align: left;
+  margin-bottom: 100px;
+  flex: 0 0 300px;
+  margin-left: 65px;
+}
+.service-list-item::before {
+  height: 32px;
+  width: 33px;
+  position: absolute;
+  left: -60px;
+  top: 3px;
+  content: "";
+}
+.icon-alarm::before {
+  background-image: url("img/icon/icon-alarm.png");
+}
+.icon-line::before {
+  background-image: url("img/icon/icon-line.png");
+}
+.icon-computer::before {
+  background-image: url("img/icon/icon-computer.png");
+}
+.icon-book::before {
+  background-image: url("img/icon/icon-book.png");
+}
+.icon-home::before {
+  background-image: url("img/icon/icon-home.png");
+}
+.icon-image::before {
+  background-image: url("img/icon/icon-image.png");
+}
+.service-name {
+  margin-bottom: 15px;
+  color: #333333;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+}
+.service-occupation {
+  font-size: 15px;
+  font-family: "Roboto Regular";
+  color: #999999;
+}
+.service-list-item:nth-child(n + 4) {
+  margin-bottom: 90px;
+}
+/* SECTION TEAM */
+
+.title-are {
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: "Kaushan Script";
+  font-size: 24px;
+}
+
+.title-occupation {
+  text-align: center;
+  font-size: 15px;
+  font-family: "Roboto";
+  color: #999999;
+  margin-bottom: 95px;
+}
+.card-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.card {
+  position: relative;
+  width: 380px;
+  height: 470px;
+  background-image: url(img/team/graphic_design.png);
+}
+.card:nth-child(2n) {
+  background-image: url(img/team/branding.png);
+}
+.card:nth-child(3n) {
+  background-image: url(img/team/developer.png);
+}
+.social-icon {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  background-color: #fce38a;
+}
+.social-icon-item {
+  position: relative;
+  display: block;
+  width: 55px;
+  height: 55px;
+  border-right: 1px solid #f38181;
+}
+.social-icon-item:hover,
+.social-icon-item:focus {
+  background-color: #95e1d3;
+}
+.social-icon-item:last-child {
+  border-right: none;
+}
+.social-icon__item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.overlay {
+  position: absolute;
+  width: 380px;
+  height: 470px;
+  background: linear-gradient(
+    0deg,
+    rgba(238, 215, 135, 0.96),
+    rgba(238, 137, 138, 0.96)
+  );
+  transition: transform 200ms;
+  opacity: 0;
+}
+.overlay:hover,
+.overlay:focus {
+  transform: translate(-3%, -3%);
+  opacity: 1;
+  z-index: 2;
+  box-shadow: 12px 14px 0px 3px #95e1d3;
+}
+.team-occupation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+}
+.occupation {
+  flex-direction: column;
+  text-align: center;
+}
+.team-name {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #333333;
+}
+.team-position {
+  margin-bottom: 85px;
+  font-size: 15px;
+  font-family: "Roboto";
+  color: #b5b5b5;
+}
+/* FOOTER SECTION */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0px;
+}
+.footer::before {
+  content: "";
+  border-bottom: #e5e5e5;
+  border-bottom-style: solid;
+  width: 1200px;
+  height: 1px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.footer-occupation {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #333333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.publishing {
+  color: #f9c0c0;
+}
+
+.form {
+  height: 40px;
+  width: 230px;
+  border: 1px solid #e5e5e5;
+  border-right: none;
+  text-align: left;
+  padding-left: 13px;
+  font-size: 15px;
+  font-family: "Roboto";
+  color: #000000;
+}
+.button {
+  height: 40px;
+  width: 150px;
+  background-color: #95e1d3;
+  border: none;
+}
+.form::placeholder {
+  text-align: left;
+  padding-left: 13px;
+  font-size: 15px;
+  font-family: "Roboto";
+  color: #cccccc;
+}
+.button-name {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  border-radius: 0%;
+  border: none;
+}
