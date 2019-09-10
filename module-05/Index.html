@@ -6,13 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
     <title>Homework-05</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,700i,900,900i&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- HEADER  -->
-    <header class="header">
-      <nav>
+    <header class="page-header">
+      <nav class="page-nav container ">
         <a href="#" class="site-logo">Mart</a>
-        <ul class="site-navigation clearfix">
+        <ul class="site-navigation">
           <li><a href="#">Home</a></li>
           <li><a href="#">About Us</a></li>
           <li><a href="#">Page</a></li>
@@ -22,169 +26,207 @@
         </ul>
       </nav>
     </header>
-    <!-- SLIDER SECTION -->
-    <div class="slider">
-      <ul class="slides">
-        <li></li>
-      </ul>
-      <button class="slider-ctrl slider-ctrl-prev"></button>
-      <div class="slider-text">
-        <p class="slider-text-up">AFFORD+ABLE PARIS TOURS</p>
-        <p class="slider-text-down">CITY TOURS / TOUR TICKETS / TOUR GUIDES</p>
-      </div>
-      <button class="slider-ctrl slider-ctrl-next"></button>
-    </div>
-    <!-- MAIN -->
-    <div class="wrapper">
-        <h2 class="title clearfix">New Colection</h2>
-        <div class="card-list clearfix">
-        <div class="card">
-          <div class="overlay">
-            <img
-              class="overlay-icon overlay-icon-1"
-              src="img/card_icon1.png"
-              alt="card_icon1"
-              width="36"
-              height="28"
-            />
-            <img
-              class="overlay-icon overlay-icon-2"
-              src="img/card_icon2.png"
-              alt="card_icon2"
-              width="36"
-              height="28"
-            />
-            <img
-              class="overlay-icon overlay-icon-3"
-              src="img/card_icon3.png"
-              alt="card-icon3"
-              width="36"
-              height="28"
-            />
-            <div class="overlay-icon-add">
-              <p class="overlay-icon-occupation">Add to Card</p>
-            </div>
-          </div>
-          <img src="img/card.png" alt="Blue Tshirt" width="255" height="322" />
-          <div class="card-bottom">
-            <p class="card-occupation"></p>
-            <p class="card-price"></p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="overlay">
-            <img
-              class="overlay-icon overlay-icon-1"
-              src="img/card_icon1.png"
-              alt="card_icon1"
-              width="36"
-              height="28"
-            />
-            <img
-              class="overlay-icon overlay-icon-2"
-              src="img/card_icon2.png"
-              alt="card_icon2"
-              width="36"
-              height="28"
-            />
-            <img
-              class="overlay-icon overlay-icon-3"
-              src="img/card_icon3.png"
-              alt="card-icon3"
-              width="36"
-              height="28"
-            />
-            <div class="overlay-icon-add">
-              <p class="overlay-icon-occupation">Add to Card</p>
-            </div>
-          </div>
-          <img src="img/card2.png" alt="Blue Tshirt" width="255" height="322" />
-          <div class="card-bottom">
-            <p class="card-occupation"></p>
-            <p class="card-price"></p>
-          </div>
-        </div>
-          <div class="card">
-            <div class="overlay">
-              <img
-                class="overlay-icon overlay-icon-1"
-                src="img/card_icon1.png"
-                alt="card_icon1"
-                width="36"
-                height="28"
-              />
-              <img
-                class="overlay-icon overlay-icon-2"
-                src="img/card_icon2.png"
-                alt="card_icon2"
-                width="36"
-                height="28"
-              />
-              <img
-                class="overlay-icon overlay-icon-3"
-                src="img/card_icon3.png"
-                alt="card-icon3"
-                width="36"
-                height="28"
-              />
-              <div class="overlay-icon-add">
-                <p class="overlay-icon-occupation">Add to Card</p>
-              </div>
-            </div>
-            <img
-              src="img/card3.png"
-              alt="Blue Tshirt"
-              width="255"
-              height="322"
-            />
-            <div class="card-bottom">
-              <p class="card-occupation"></p>
-              <p class="card-price"></p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="overlay">
-              <img
-                class="overlay-icon overlay-icon-1"
-                src="img/card_icon1.png"
-                alt="card_icon1"
-                width="36"
-                height="28"
-              />
-              <img
-                class="overlay-icon overlay-icon-2"
-                src="img/card_icon2.png"
-                alt="card_icon2"
-                width="36"
-                height="28"
-              />
-              <img
-                class="overlay-icon overlay-icon-3"
-                src="img/card_icon3.png"
-                alt="card-icon3"
-                width="36"
-                height="28"
-              />
-              <div class="overlay-icon-add">
-                <p class="overlay-icon-occupation">Add to Card</p>
-              </div>
-            </div>
-            <img
-              src="img/card4.png"
-              alt="Blue Tshirt"
-              width="255"
-              height="322"
-            />
-            <div class="card-bottom">
-              <p class="card-occupation"></p>
-              <p class="card-price"></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    <!-- FOOTER -->
-    <div class="footer clearfix">
-      All Rights Reserved © Dokan |Designed<span> ThemenGraph</span>
-    </div>
   </body>
+  <!-- SLIDER SECTION -->
+  <div class="slider container">
+    <button class="slider-ctrl slider-ctrl-prev">
+      <a href=""><img src="img/left_arrow.png" alt="left_arrow"/></a>
+    </button>
+    <button class="slider-ctrl slider-ctrl-next">
+      <a href=""><img src="img/right_arrow.png" alt="right_arrow"/></a>
+    </button>
+    <ul class="slides">
+      <li class="slides-item">
+        <img class="slides-image" src="img/slide.png" alt="slide" />
+      </li>
+    </ul>
+    <div class="slides-occupation">
+      <h3 class="slides-title">AFFORDABLE PARIS TOURS</h3>
+      <p class="slides-descr">CITY TOURS / TOUR TICKETS / TOUR GUIDES</p>
+    </div>
+  </div>
+  <!-- MAIN SECTION -->
+  <main class="background container">
+    <h3 class="card-occupation cleafix">New Collection</h3>
+    <div class="card-list container">
+      <div class="card">
+        <div class="overlay">
+          <div class="icon">
+            <a class="social-icon-item" href="#">
+              <img
+                class="social-icon__item"
+                src="img/card_icon1.png"
+                alt="like"
+              />
+            </a>
+            <a class="social-icon-item" href="#">
+              <img
+                class="social-icon__item"
+                src="img/card_icon2.png"
+                alt="share"
+              />
+            </a>
+            <a class="social-icon-item" href="#">
+              <img
+                class="social-icon__item"
+                src="img/card_icon3.png"
+                alt="time"
+              />
+            </a>
+          </div>
+          <div class="add-card">
+            <div class="add__card">
+              <a class="add-img" href="#"
+                ><img src="img/card_icon4.png" alt="add"
+              /></a>
+              <p class="add-occupation">Add to card</p>
+            </div>
+          </div>
+        </div>
+        <div class="card_occupation">
+          <a class="occupation-link" href="#"
+            ><p class="occupation-name">Blue Tshirt</p></a
+          >
+          <a class="occupation-link" href="#"
+            ><p class="occupation-price">26$</p></a
+          >
+        </div>
+      </div>
+      <div class="card">
+        <div class="overlay">
+          <div class="icon">
+            <a class="social-icon-item" href="#">
+              <img
+                class="social-icon__item"
+                src="img/card_icon1.png"
+                alt="like"
+              />
+            </a>
+            <a class="social-icon-item" href="#">
+              <img
+                class="social-icon__item"
+                src="img/card_icon2.png"
+                alt="share"
+              />
+            </a>
+            <a class="social-icon-item" href="#">
+              <img
+                class="social-icon__item"
+                src="img/card_icon3.png"
+                alt="time"
+              />
+            </a>
+          </div>
+          <div class="add-card">
+            <div class="add__card">
+              <a class="add-img" href="#"
+                ><img src="img/card_icon4.png" alt="add"
+              /></a>
+              <p class="add-occupation">Add to card</p>
+            </div>
+          </div>
+        </div>
+        <div class="card_occupation"></div>
+        <div class="card_occupation">
+          <a class="occupation-link" href="#"
+            ><p class="occupation-name">WOMAN shirt</p></a
+          >
+          <a class="occupation-link" href="#"
+            ><p class="occupation-price">31$</p></a
+          >
+        </div>
+      </div>
+      <div class="card">
+        <div class="overlay">
+          <div class="icon">
+            <a class="social-icon-item" href="#">
+              <img
+                class="social-icon__item"
+                src="img/card_icon1.png"
+                alt="like"
+              />
+            </a>
+            <a class="social-icon-item" href="#">
+              <img
+                class="social-icon__item"
+                src="img/card_icon2.png"
+                alt="share"
+              />
+            </a>
+            <a class="social-icon-item" href="#">
+              <img
+                class="social-icon__item"
+                src="img/card_icon3.png"
+                alt="time"
+              />
+            </a>
+          </div>
+          <div class="add-card">
+            <div class="add__card">
+              <a class="add-img" href="#"
+                ><img src="img/card_icon4.png" alt="add"
+              /></a>
+              <p class="add-occupation">Add to card</p>
+            </div>
+          </div>
+        </div>
+        <div class="card_occupation"></div>
+        <div class="card_occupation">
+          <a class="occupation-link" href="#"
+            ><p class="occupation-name">YELLOW Tshirt</p></a
+          >
+          <a class="occupation-link" href="#"
+            ><p class="occupation-price">31$</p></a
+          >
+        </div>
+      </div>
+      <div class="card">
+        <div class="overlay">
+          <div class="icon">
+            <a class="social-icon-item" href="#">
+              <img
+                class="social-icon__item"
+                src="img/card_icon1.png"
+                alt="like"
+              />
+            </a>
+            <a class="social-icon-item" href="#">
+              <img
+                class="social-icon__item"
+                src="img/card_icon2.png"
+                alt="share"
+              />
+            </a>
+            <a class="social-icon-item" href="#">
+              <img
+                class="social-icon__item"
+                src="img/card_icon3.png"
+                alt="time"
+              />
+            </a>
+          </div>
+          <div class="add-card">
+            <div class="add__card">
+              <a class="add-img" href="#"
+                ><img src="img/card_icon4.png" alt="add"
+              /></a>
+              <p class="add-occupation">Add to card</p>
+            </div>
+          </div>
+        </div>
+        <div class="card_occupation"></div>
+        <div class="card_occupation">
+          <a class="occupation-link" href="#"
+            ><p class="occupation-name">Cool lingerie</p></a
+          >
+          <a class="occupation-link" href="#"
+            ><p class="occupation-price">56$</p></a
+          >
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="footer container">
+    <p class="footer_occupation">All Rights Reserved © Dokan | Designed <span>ThemenGraph</span></p>
+  </div>
 </html>
