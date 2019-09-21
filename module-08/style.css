@@ -23,7 +23,6 @@ img {
   margin: 0 auto;
   padding: 0;
   padding-top: 33px;
-  margin-bottom: 125px;
 }
 .site_navigation a {
   font-size: 14px;
@@ -34,6 +33,9 @@ img {
   font-weight: lighter;
   cursor: pointer;
 }
+.site_navigation_link {
+  margin-bottom: 125px;
+}
 .site_navigation a:hover,
 .site_navigation a:focus {
   border: 2px solid #ffffff;
@@ -42,7 +44,8 @@ img {
 .title {
   text-align: center;
 }
-.site_logo {
+.site_logo_name {
+  margin: 0 auto;
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -51,7 +54,7 @@ img {
   margin-bottom: 40px;
 }
 .title_name {
-  font-size: 30px;
+  font-size: 27px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   color: #ffffff;
@@ -59,12 +62,15 @@ img {
   margin-bottom: 20px;
 }
 .title_occupation {
+  display: inline-block;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
   color: #ffffff;
+  margin: 0 auto;
   margin-bottom: 20px;
-  padding: 0px 30px;
+  width: 218px;
+  text-align: center;
 }
 .button_header {
   width: 280px;

@@ -5,11 +5,15 @@
     .page_header {
         min-height: 700px;
     }
+    .site_logo {
+        order: -1;
+    }
     .site_navigation {
-        margin-bottom: 161px;
         display: flex;
-        justify-content: flex-end;
-        margin-right: 35px;
+        justify-content: space-between;
+        padding: 46px 50px 0px 50px;
+        align-items: flex-start;
+        margin: 0 auto;
     }
     .site_navigation a {
         font-size: 14px;
@@ -25,6 +29,7 @@
         font-size: 50px;
     }
     .title_occupation {
+        width: 405px;
         margin-bottom: 32px;
         font-size: 24px;
     }
@@ -61,19 +66,12 @@
         width: 192px;
     }
 }
-.Rectangle_1 {
-    background-color: rgba(26, 25, 21, 0.3);
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 1440px;
-    height: 700px;
-    z-index: 41;
-  }
-
   @media (min-width:940px) {
+
 .container {
     width: 940px;
 }
-
+.site_navigation {
+    padding: 46px 0px 0px 0px;
+}
   }
