@@ -8,12 +8,14 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+.page-header {
+  margin-bottom: 130px;
+}
 .page-nav {
   display: flex;
   min-height: 50px;
   align-items: flex-end;
   justify-content: space-between;
-  margin-bottom: 130px;
 }
 .site-logo {
   text-decoration: none;
@@ -60,19 +62,26 @@
   width: 100%;
 }
 /* SECTION SERVICE */
-.title-service {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 .title-work {
+  text-transform: none;
+  text-align: center;
   font-size: 24px;
   font-family: "Kaushan Script";
+  color: #000000;
+  margin-bottom: 22px;
+}
+.title-service {
+  font-size: 24px;
+  font-family: "Montserrat";
   margin-bottom: 22px;
   text-align: center;
+  margin-bottom: 68px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+
 }
-.title-main {
+.title-servace-main {
   text-align: center;
   font-size: 30px;
   font-family: "Montserrat";
@@ -81,12 +90,14 @@
 }
 .title-service::after {
   content: "";
+  display: block;
   border-bottom: #f38181;
   border-bottom-style: solid;
   width: 60px;
   height: 3px;
   text-align: center;
-  margin-bottom: 111px;
+  padding-top: 43px;
+  margin: 0 auto;
 }
 .service-list {
   display: flex;
@@ -148,68 +159,57 @@
 /* SECTION TEAM */
 
 .title-are {
-  margin-bottom: 25px;
   text-align: center;
-  font-family: "Kaushan Script";
   font-size: 24px;
+  font-family: "Kaushan Script";
+  color: #000000;
+  margin-bottom: 25px;
 }
-
-.title-occupation {
+.title-team-main {
   text-align: center;
+  font-size: 30px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 49px;
+}
+.title-team-main::after {
+  content: "";
+  display: block;
+  border-bottom: #f38181;
+  border-bottom-style: solid;
+  width: 60px;
+  height: 3px;
+  text-align: center;
+  padding-top: 43px;
+  margin: 0 auto;
+}
+.title-occupation {
   font-size: 15px;
   font-family: "Roboto";
   color: #999999;
+  text-align: center;
   margin-bottom: 95px;
 }
-.card-list {
+.card {
+  list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
-}
-.card {
-  position: relative;
-  width: 380px;
-  height: 470px;
-  background-image: url(img/team/graphic_design.png);
-}
-.card:nth-child(2n) {
-  background-image: url(img/team/branding.png);
-}
-.card:nth-child(3n) {
-  background-image: url(img/team/developer.png);
-}
-.social-icon {
-  display: flex;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   margin: 0 auto;
-  background-color: #fce38a;
+  padding: 0;
+  margin-bottom: 82px;
 }
-.social-icon-item {
+.card_list {
   position: relative;
-  display: block;
-  width: 55px;
-  height: 55px;
-  border-right: 1px solid #f38181;
 }
-.social-icon-item:hover,
-.social-icon-item:focus {
-  background-color: #95e1d3;
-}
-.social-icon-item:last-child {
-  border-right: none;
-}
-.social-icon__item {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.social-image {
+  position: relative;
 }
 .overlay {
   position: absolute;
+  top: 5px;
   width: 380px;
   height: 470px;
   background: linear-gradient(
@@ -227,29 +227,59 @@
   z-index: 2;
   box-shadow: 12px 14px 0px 3px #95e1d3;
 }
-.team-occupation {
+.social-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fce38a;
 }
-.occupation {
-  flex-direction: column;
+.social-icon-item {
+  background-image: url(img/social-icon/facebook.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: block;
+  width: 55px;
+  height: 55px;
+  border-right: 1px solid #f38181;
+}
+.social-icon-item:nth-child(2n) {
+  background-image: url(img/social-icon/twitter.png);
+}
+.social-icon-item:nth-child(3n) {
+  background-image: url(img/social-icon/pinterest.png);
+}
+.social-icon-item:nth-child(4n) {
+  background-image: url(img/social-icon/instagram.png);
+}
+.social-icon-item:hover,
+.social-icon-item:focus {
+  background-color: #95e1d3;
+}
+.social-icon-item:last-child {
+  border-right: none;
+}
+.team_name {
   text-align: center;
-}
-.team-name {
-  margin-bottom: 15px;
   text-transform: uppercase;
   font-size: 14px;
   font-family: "Montserrat";
   color: #333333;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
-.team-position {
-  margin-bottom: 85px;
+.team_position {
+  text-align: center;
   font-size: 15px;
   font-family: "Roboto";
   color: #b5b5b5;
+  margin: 0 auto;
 }
+
 /* FOOTER SECTION */
 .footer {
   display: flex;
@@ -258,6 +288,7 @@
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 0px;
+  margin-bottom: 50px;
 }
 .footer::before {
   content: "";
