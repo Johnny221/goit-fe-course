@@ -3,7 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+a {
+  display: block;
+}
+.wrapper
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -79,7 +82,7 @@
   font-weight: bold;
   text-transform: uppercase;
   color: #000000;
-
+  line-height: 2.1;
 }
 .title-servace-main {
   text-align: center;
@@ -157,13 +160,15 @@
   margin-bottom: 90px;
 }
 /* SECTION TEAM */
-
+.team-section {
+  padding-bottom: 82px;
+}
 .title-are {
   text-align: center;
   font-size: 24px;
   font-family: "Kaushan Script";
   color: #000000;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 .title-team-main {
   text-align: center;
@@ -182,7 +187,7 @@
   width: 60px;
   height: 3px;
   text-align: center;
-  padding-top: 43px;
+  padding-top: 40px;
   margin: 0 auto;
 }
 .title-occupation {
@@ -199,7 +204,6 @@
   align-items: center;
   margin: 0 auto;
   padding: 0;
-  margin-bottom: 82px;
 }
 .card_list {
   position: relative;
@@ -289,16 +293,10 @@
   margin: 0 auto;
   padding: 0px;
   margin-bottom: 50px;
+  border-top: solid #e5e5e5;
+  padding-top: 24px;
 }
-.footer::before {
-  content: "";
-  border-bottom: #e5e5e5;
-  border-bottom-style: solid;
-  width: 1200px;
-  height: 1px;
-  text-align: center;
-  margin-bottom: 25px;
-}
+
 .footer-occupation {
   font-size: 14px;
   font-family: "Montserrat";
