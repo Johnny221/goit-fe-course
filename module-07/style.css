@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  display: block;
+}
 .container {
   max-width: 940px;
   margin: 0 auto;
@@ -18,7 +21,7 @@
 .site-logo {
   text-decoration: none;
   color: #fed136;
-  font-family: "Chilanka";
+  font-family: "Chilanka", sans-serif;
   font-size: 26px;
 }
 .site-navigation {
