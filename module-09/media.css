@@ -1,0 +1,55 @@
+@media (min-width: 748px) {
+  .header {
+    min-height: 700px;
+  }
+  .site_navigation {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .site_logo {
+      order: -1;
+  }
+  .title_name {
+    font-size: 52px;
+    width: 550px;
+  }
+  .title_occupation {
+    font-size: 24px;
+    margin-bottom: 34px;
+  }
+  .button_header {
+    width: 230px;
+  }
+  .page_nav {
+    padding: 48px 0px 151px 0px;
+  }
+  .partners_item_img::before {
+    left: 195px;
+  }
+  .partners_button {
+    width: 193px;
+  }
+  .partners_occupation {
+    margin-bottom: 31px;
+  }
+  .item_1 {
+    order: -2;
+  }
+  .item_3 {
+    order: -1;
+  }
+  .partners_list_item:nth-child(2n) {
+    margin-bottom: 0px;
+  }
+  .partners_list {
+      padding-bottom: 39px;
+  }
+}
+@media (min-width: 940px) {
+  .partners_item_img::before {
+    left: 125px;
+  }
+  .page_nav {
+    padding: 48px 0px 141px 0px;
+  }
+}
