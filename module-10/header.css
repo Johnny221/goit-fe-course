@@ -1,0 +1,129 @@
+.page-header {
+  margin-bottom: 64px;
+}
+.background {
+  min-height: 1000px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(img/Background.png);
+}
+
+.site-logo {
+  font-size: 30px;
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+.page-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-top: 39px;
+  padding-bottom: 180px;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+.site-navigation {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 620px;
+}
+
+.site-navigation__link--svg {
+  width: 32px;
+  height: 15px;
+}
+.site-navigation__item svg {
+  fill: #ffffff;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.site-navigation a:hover svg,
+.iste-navigation a:focus svg {
+  fill: #fce38a;
+}
+.site-navigation__link {
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-style: normal;
+  text-transform: uppercase;
+  -webkit-transition: color 400ms;
+  -o-transition: color 400ms;
+  transition: color 400ms;
+  position: relative;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  cursor: pointer;
+  color: #fce38a;
+}
+.site-navigation a::after {
+  background-color: #fce38a;
+  display: block;
+  content: "";
+  height: 3px;
+  width: 0%;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: width 200ms;
+  -o-transition: width 200ms;
+  transition: width 200ms;
+}
+.site-navigation a:hover::after,
+.site-navigation a:focus::after {
+  width: 100%;
+}
+.mogo-article {
+  text-align: center;
+}
+.mogo-article__caption {
+  font-size: 72px;
+  color: #ffffff;
+  font-family: "Kaushan Script";
+}
+.mogo-article__heading {
+  font-size: 150px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 auto;
+  line-height: 1;
+  margin-bottom: 100px;
+  width: 820px;
+}
+.header-button {
+  width: 164px;
+  height: 44px;
+  border: 4px solid #ffffff;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0);
+  transition: width 400ms;
+}
+.header-button:hover,
+.header-button:focus {
+  width: 250px;
+  border: 4px solid #f38181;
+}
