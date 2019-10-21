@@ -1,0 +1,96 @@
+.service__title--serif {
+  text-transform: none;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Kaushan Script';
+  color: $primary-black-color;
+  margin-bottom: 22px;
+}
+.service__title {
+  font-size: 24px;
+  font-family: 'Montserrat';
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 68px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $primary-black-color;
+  line-height: 2.1;
+}
+.service__title::after {
+  content: '';
+  display: block;
+  border-bottom: $primary-red-color;
+  border-bottom-style: solid;
+  width: 60px;
+  height: 3px;
+  text-align: center;
+  padding-top: 43px;
+  margin: 0 auto;
+}
+.service__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.service__item {
+  position: relative;
+  text-align: left;
+  margin-bottom: 100px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 300px;
+  flex: 0 0 300px;
+  margin-left: 65px;
+  &::before {
+    height: 32px;
+    width: 33px;
+    position: absolute;
+    left: -60px;
+    top: 3px;
+    content: '';
+    color: $primary-blue-color;
+  }
+}
+
+.service__icon--alarm::before {
+  background-image: url('/src/images/icons_service/icon-alarm.png');
+}
+.service__icon--line::before {
+  background-image: url('/src/images/icons_service/icon-line.png');
+}
+.service__icon--comp::before {
+  background-image: url('/src/images/icons_service/icon-computer.png');
+}
+.service__icon--book::before {
+  background-image: url('/src/images/icons_service/icon-book.png');
+}
+.service__icon--home::before {
+  background-image: url('/src/images/icons_service/icon-home.png');
+}
+.service__icon--pict::before {
+  background-image: url('/src/images/icons_service/icon-pict.png');
+}
+.service__item-title {
+  margin-bottom: 15px;
+  color: $primary-gray-color;
+  font-size: 14px;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+}
+.service__item-text {
+  font-size: 15px;
+  font-family: 'Roboto Regular';
+  font-weight: normal;
+  color: rgba(29, 11, 11, 0.5);
+}
+.service_item:nth-child(n + 4) {
+  margin-bottom: 90px;
+}
